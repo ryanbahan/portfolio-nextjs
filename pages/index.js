@@ -1,207 +1,310 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Nav from '../src/components/Nav'
+import LandingPage from '../src/components/LandingPage'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" data-barba="wrapper">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta charset="utf-8" />
+        <title>hey, i'm ryan.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.9.1/pts.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
       </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <Nav />
+      <main data-barba="container" data-barba-namespace="home">
+      <LandingPage />
+        <section class="work">
+          <a name="work"><h2 class="title-label">Featured Work</h2></a>
+          <section class="portfolio-item-wrapper">
+            <article class="portfolio-card" data-portfolio-item="whats-new">
+              <img src="/assets/whats-new-device-mock-1x.png" alt="" class="device-mock" />
+              <div class="portfolio-card-info">
+                <h3>What's New?</h3>
+                <h4>React, MapQuest API, News API</h4>
+                <p class="portfolio-description">
+                  A simple & efficient news application built in React.
+                  Leverages the Free News API & MapQuest reverse-geocoding
+                  API to serve up relevant stories.
+                </p>
+                <div class="portfolio-button-container">
+                  <a href="https://ryanbahan.github.io/whats-new/" target="_blank"><button type="button" name="button">View App</button></a>
+                  <a href="https://github.com/ryanbahan/whats-new" target="_blank"><button type="button" name="button">View Code</button></a>
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card" data-portfolio-item="trip-advicer">
+              <img src="/assets/fitlit-device-mock-1x.png" alt="" class="device-mock" />
+              <div class="portfolio-card-info">
+                <h3>FitLit</h3>
+                <h4>jQuery, Chart.js, Interact.js</h4>
+                <p class="portfolio-description">
+                  A widget-based, drag-and-drop fitness tracking application meant
+                  to improve the health and well-being of its user community.
+                </p>
+                <div class="portfolio-button-container">
+                  <a href="https://ryanbahan.github.io/fitlit-1911/src/index.html" target="_blank"><button type="button" name="button">View App</button></a>
+                  <a href="https://github.com/ryanbahan/fitlit-1911" target="_blank"><button type="button" name="button">View Code</button></a>
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card" data-portfolio-item="fitlit">
+              <img src="/assets/trip-advicer-device-mock-1x.png" alt="" class="device-mock" />
+              <div class="portfolio-card-info">
+                <h3>Trip Advicer</h3>
+                <h4>jQuery, Chart.js, Moment.js</h4>
+                <p class="portfolio-description">
+                  A travel-booking application with exceptional consideration to UI/UX, compelling form layouts,
+                  and OOP-adherent application architecture.
+                </p>
+                <div class="portfolio-button-container">
+                  <a href="https://ryanbahan.github.io/trip-advicer-v1/" target="_blank"><button type="button" name="button">View App</button></a>
+                  <a href="https://github.com/ryanbahan/trip-advicer-v1" target="_blank"><button type="button" name="button">View Code</button></a>
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
       </footer>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
+      <style jsx global>{`
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          font-family: 'Spartan', sans-serif;
+        }
+
+        html,
+        body {
+          width: 100vw;
+          height: 100%;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+        nav a {
+          text-decoration: none;
+          font-weight: 600;
+          color: #fff;
+        }
+
+        nav {
+          background: rgb(175,82,255);
+          background: linear-gradient(351deg, rgba(175,82,255,1) 0%, rgba(0,212,255,1) 100%);
+          color: #fff;
+          position: fixed;
+          top: 0;
+          right: 0;
+          min-width: 15vw;
+          border-bottom-left-radius: 5rem;
+          z-index: 2;
+        }
+
+        nav ul {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          justify-content: space-around;
           align-items: center;
+          display: flex;
+          list-style: none;
+          padding: 1.25rem;
+          margin-left: 0.75rem;
+        }
+
+        nav li {
+          text-align: center;
+          min-width: 2.5rem;
+          margin: 0.5rem 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
         }
 
         main {
-          padding: 5rem 0;
-          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        footer {
+          background-color: grey;
+          height: 20rem;
+          position: relative;
+          z-index: 5;
+        }
+
+        .landing-wrapper {
+          position: fixed;
+          top: 0;
+        }
+
+        .landing {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+        }
+
+        .landing-placeholder {
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .work {
+          box-shadow: 0px -2.5px 5px rgba(0,0,0,0.05);
+          background-color: #fff;
+          flex-grow: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          position: relative;
+          padding-bottom: 2.5%;
+          width: 100vw;
+          z-index: 3;
         }
 
-        footer {
+        .about {
+          border: solid 1px black;
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          height: 100vh;
         }
 
-        footer img {
-          margin-left: 0.5rem;
+        .title-label {
+          margin: 4.5rem 0;
         }
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
+        .title-label-2 {
+          margin: -2.5rem 0 0 0;
           text-align: center;
         }
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+        .lower-cta-tagline {
+          margin-bottom: 2.5rem;
+          max-width: 60vw;
         }
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        .center-wrapper {
+          pointer-events: none;
+          z-index: 5;
         }
 
-        .grid {
+        .partial-bg {
+          top: 0;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          background-color: #e3e3e3;
+          min-height: 100vh;
+          width: 47.3%;
+        }
+
+        .firstname,
+        .lastname {
+          font-size: 10vw;
+          font-weight: 100;
+        }
+
+        .skills {
+          font-size: 2.9vw;
+          font-weight: 300;
+          margin: 2.5% 0;
+          padding: 0 1.5%;
+          list-style: none;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
+          justify-content: space-between;
         }
 
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+        .underline {
+          padding-bottom: 1%;
+          border-bottom: solid 0.5px rgba(0,0,0,0.85);
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+        .social-icons {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          list-style: none;
+          display: flex;
+          margin: 0.25rem;
         }
 
-        .card h3 {
-          margin: 0 0 1rem 0;
+        .social-icons li {
           font-size: 1.5rem;
+          padding: 1rem;
+          min-width: 2rem;
+          text-align: center;
+          cursor: pointer;
         }
 
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
+        .fa-github {
+          color: #F1502F;
+        }
+
+        .fa-linkedin-in {
+          color: #2867B2;
+        }
+
+        .fa-envelope-square {
+          color: rgba(0,0,0,0.65)
+        }
+
+        .portfolio-item-wrapper {
+          max-width: 100vw;
+          overflow: scroll;
+          margin: 0 2.5rem;
+        }
+
+        .portfolio-card {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 0 2.5rem 0;
+          max-width: 100vw;
+        }
+
+        .portfolio-card-info {
+          padding: 0 2.5rem 1.5rem 0;
+          width: 27.5rem;
+          flex-grow: 1;
+          margin-left: 2.5rem;
+        }
+
+        .portfolio-card-info > * {
+          padding: 0.75rem 0;
+        }
+
+        .portfolio-card-info button {
+          padding: 1rem;
+          font-size: 0.85rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+        }
+
+        .device-mock {
+          min-width: 20rem;
+          width: 30rem;
+          max-width: 100%;
+          flex-grow: 1;
+          height: 100%;
+          margin-left: 2.5rem;
+          margin-right: 2.5rem;
+          margin-bottom: 2.5rem;
+        }
+
+        .portfolio-description {
           line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
