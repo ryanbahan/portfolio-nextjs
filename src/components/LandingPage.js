@@ -1,4 +1,4 @@
-import { generateHomePoints } from '../main';
+import { generateHomePoints } from '../generatePoints';
 
 class LandingPage extends React.Component {
 

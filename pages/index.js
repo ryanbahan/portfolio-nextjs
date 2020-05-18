@@ -9,15 +9,13 @@ export default function Home() {
       <Head>
         <meta charset="utf-8" />
         <title>hey, i'm ryan.</title>
+        <script src="/pts.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
-        <script src="https://unpkg.com/@barba/core"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pts/0.9.1/pts.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
       </Head>
       <Nav />
       <main data-barba="container" data-barba-namespace="home">
-      <LandingPage />
+        <LandingPage />
         <section class="work">
           <a name="work"><h2 class="title-label">Featured Work</h2></a>
           <section class="portfolio-item-wrapper">
