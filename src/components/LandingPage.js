@@ -9,27 +9,27 @@ class LandingPage extends React.Component {
   render() {
     return (
       <>
-        <div class="landing-wrapper">
-          <section class="landing">
-            <ul class="social-icons">
-              <a href="https://github.com/ryanbahan" target="_blank"><li>github</li></a>
-              <a href="https://www.linkedin.com/in/ryanbahan/" target="_blank"><li>linkedin</li></a>
-              <a href="mailto:ryan@ryanbahan.com"><li>email</li></a>
+        <div className="landing-wrapper">
+          <section className="landing">
+            <ul className="social-icons">
+              <a href="https://github.com/ryanbahan" target="_blank"><li><i className="fab fa-github"></i></li></a>
+              <a href="https://www.linkedin.com/in/ryanbahan/" target="_blank"><li><i className="fab fa-linkedin-in"></i></li></a>
+              <a href="mailto:ryan@ryanbahan.com"><li><i className="fas fa-envelope-square"></i></li></a>
             </ul>
-            <div class="partial-bg">
+            <div className="partial-bg">
               <canvas id="home-points"></canvas>
             </div>
-            <div class="center-wrapper">
-              <p class="firstname">ryan <span class="lastname">bahan</span></p>
-              <ul class="skills">
-                <li class="skills-1 underline">developer</li>
-                <li class="skills-2">writer</li>
-                <li class="skills-3">creator</li>
+            <div className="center-wrapper">
+              <p className="firstname">ryan <span className="lastname">bahan</span></p>
+              <ul className="skills">
+                <li className="skills-1 underline">developer</li>
+                <li className="skills-2">writer</li>
+                <li className="skills-3">creator</li>
               </ul>
             </div>
           </section>
         </div>
-        <div class="landing-placeholder">
+        <div className="landing-placeholder">
         </div>
       </>
     )

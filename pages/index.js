@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../src/components/Nav'
 import LandingPage from '../src/components/LandingPage'
+import FeaturedWork from '../src/components/FeaturedWork'
 
 export default function Home() {
   return (
-    <div className="container" data-barba="wrapper">
+    <div className="container">
       <Head>
         <meta charset="utf-8" />
         <title>hey, i'm ryan.</title>
@@ -14,57 +15,39 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
       </Head>
       <Nav />
-      <main data-barba="container" data-barba-namespace="home">
+      <main>
         <LandingPage />
-        <section class="work">
-          <a name="work"><h2 class="title-label">Featured Work</h2></a>
-          <section class="portfolio-item-wrapper">
-            <article class="portfolio-card" data-portfolio-item="whats-new">
-              <img src="/assets/whats-new-device-mock-1x.png" alt="" class="device-mock" />
-              <div class="portfolio-card-info">
-                <h3>What's New?</h3>
-                <h4>React, MapQuest API, News API</h4>
-                <p class="portfolio-description">
-                  A simple & efficient news application built in React.
-                  Leverages the Free News API & MapQuest reverse-geocoding
-                  API to serve up relevant stories.
-                </p>
-                <div class="portfolio-button-container">
-                  <a href="https://ryanbahan.github.io/whats-new/" target="_blank"><button type="button" name="button">View App</button></a>
-                  <a href="https://github.com/ryanbahan/whats-new" target="_blank"><button type="button" name="button">View Code</button></a>
-                </div>
-              </div>
-            </article>
-            <article class="portfolio-card" data-portfolio-item="trip-advicer">
-              <img src="/assets/fitlit-device-mock-1x.png" alt="" class="device-mock" />
-              <div class="portfolio-card-info">
-                <h3>FitLit</h3>
-                <h4>jQuery, Chart.js, Interact.js</h4>
-                <p class="portfolio-description">
-                  A widget-based, drag-and-drop fitness tracking application meant
-                  to improve the health and well-being of its user community.
-                </p>
-                <div class="portfolio-button-container">
-                  <a href="https://ryanbahan.github.io/fitlit-1911/src/index.html" target="_blank"><button type="button" name="button">View App</button></a>
-                  <a href="https://github.com/ryanbahan/fitlit-1911" target="_blank"><button type="button" name="button">View Code</button></a>
-                </div>
-              </div>
-            </article>
-            <article class="portfolio-card" data-portfolio-item="fitlit">
-              <img src="/assets/trip-advicer-device-mock-1x.png" alt="" class="device-mock" />
-              <div class="portfolio-card-info">
-                <h3>Trip Advicer</h3>
-                <h4>jQuery, Chart.js, Moment.js</h4>
-                <p class="portfolio-description">
-                  A travel-booking application with exceptional consideration to UI/UX, compelling form layouts,
-                  and OOP-adherent application architecture.
-                </p>
-                <div class="portfolio-button-container">
-                  <a href="https://ryanbahan.github.io/trip-advicer-v1/" target="_blank"><button type="button" name="button">View App</button></a>
-                  <a href="https://github.com/ryanbahan/trip-advicer-v1" target="_blank"><button type="button" name="button">View Code</button></a>
-                </div>
-              </div>
-            </article>
+        <section className="work">
+          <a name="work"><h2 className="title-label">Featured Work</h2></a>
+          <section className="portfolio-item-wrapper">
+            <FeaturedWork
+              title={"What's New?"}
+              subtitle={"React, MapQuest API, News API"}
+              description={`A simple & efficient news application built in React.
+                Leverages the Free News API & MapQuest reverse-geocoding
+                API to serve up relevant stories.`}
+              img={"/assets/whats-new-device-mock-1x.png"}
+              repoLink={"https://github.com/ryanbahan/whats-new"}
+              deployLink={"https://ryanbahan.github.io/whats-new/"}
+            />
+            <FeaturedWork
+              title={"FitLit"}
+              subtitle={"jQuery, Chart.js, Interact.js"}
+              description={`A widget-based, drag-and-drop fitness tracking application meant
+              to improve the health and well-being of its user community.`}
+              img={"/assets/fitlit-device-mock-1x.png"}
+              repoLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
+              deployLink={"https://github.com/ryanbahan/fitlit-1911"}
+            />
+            <FeaturedWork
+              title={"Trip Advicer"}
+              subtitle={"jQuery, Chart.js, Moment.js"}
+              description={`A travel-booking application with exceptional consideration to UI/UX, compelling form layouts,
+              and OOP-adherent application architecture.`}
+              img={"/assets/trip-advicer-device-mock-1x.png"}
+              repoLink={"https://ryanbahan.github.io/trip-advicer-v1/"}
+              deployLink={"https://github.com/ryanbahan/trip-advicer-v1"}
+            />
           </section>
         </section>
       </main>
