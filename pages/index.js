@@ -11,6 +11,7 @@ export default function Home() {
         <meta charset="utf-8" />
         <title>hey, i'm ryan.</title>
         <script src="/pts.min.js"></script>
+        <script src="https://kit.fontawesome.com/140c3ff74c.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
       </Head>
@@ -21,29 +22,29 @@ export default function Home() {
           <a name="work"><h2 className="title-label">Featured Work</h2></a>
           <section className="portfolio-item-wrapper">
             <FeaturedWork
-              title={"What's New?"}
-              subtitle={"React, MapQuest API, News API"}
-              description={`A simple & efficient news application built in React.
-                Leverages the Free News API & MapQuest reverse-geocoding
-                API to serve up relevant stories.`}
-              img={"/assets/whats-new-device-mock-1x.png"}
-              repoLink={"https://github.com/ryanbahan/whats-new"}
-              deployLink={"https://ryanbahan.github.io/whats-new/"}
+              title={"Easy Email"}
+              subtitle={"React/Node, IBM Watson"}
+              description={`Easy Email allows users of all skills levels to create beautiful, responsive emails
+              with no code required. Even better - Easy Email leverages machine learning to
+              analyze the emotional sentiment of your email content.`}
+              img={"/assets/Macbook01.png"}
+              repoLink={"https://github.com/ryanbahan/easy-email-2020"}
+              deployLink={"https://ryanbahan.github.io/easy-email-2020/"}
+            />
+            <FeaturedWork
+              title={"Learnable"}
+              subtitle={"Next.js, Golang"}
+              description={`The learning management platform for developers. Store content from all around
+                the web, track progress, and close those pesky browser tabs.`}
+              img={"/assets/Macbook02.png"}
+              repoLink={"https://github.com/learn-able"}
+              deployLink={"https://learnable-fe.now.sh/"}
             />
             <FeaturedWork
               title={"FitLit"}
               subtitle={"jQuery, Chart.js, Interact.js"}
               description={`A widget-based, drag-and-drop fitness tracking application meant
               to improve the health and well-being of its user community.`}
-              img={"/assets/fitlit-device-mock-1x.png"}
-              repoLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
-              deployLink={"https://github.com/ryanbahan/fitlit-1911"}
-            />
-            <FeaturedWork
-              title={"Trip Advicer"}
-              subtitle={"jQuery, Chart.js, Moment.js"}
-              description={`A travel-booking application with exceptional consideration to UI/UX, compelling form layouts,
-              and OOP-adherent application architecture.`}
               img={"/assets/trip-advicer-device-mock-1x.png"}
               repoLink={"https://ryanbahan.github.io/trip-advicer-v1/"}
               deployLink={"https://github.com/ryanbahan/trip-advicer-v1"}
@@ -270,6 +271,9 @@ export default function Home() {
           padding: 1rem;
           font-size: 0.85rem;
           border-radius: 0.25rem;
+          border: solid 0.5px #f9f9f9;
+          background: #e4e4e4;
+          margin: 0.5rem;
           cursor: pointer;
         }
 
