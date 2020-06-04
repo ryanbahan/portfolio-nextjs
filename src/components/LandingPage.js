@@ -1,4 +1,7 @@
 import { generateHomePoints } from '../generatePoints';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 class LandingPage extends React.Component {
 
@@ -12,9 +15,9 @@ class LandingPage extends React.Component {
         <div className="landing-wrapper">
           <section className="landing">
             <ul className="social-icons">
-              <a href="https://github.com/ryanbahan" target="_blank"><li><i className="fab fa-github"></i></li></a>
-              <a href="https://www.linkedin.com/in/ryanbahan/" target="_blank"><li><i className="fab fa-linkedin-in"></i></li></a>
-              <a href="mailto:ryan@ryanbahan.com"><li><i className="fas fa-envelope-square"></i></li></a>
+              <a href="https://github.com/ryanbahan" target="_blank"><li><GitHubIcon style={{ fill: '#F1502F' }}/></li></a>
+              <a href="https://www.linkedin.com/in/ryanbahan/" target="_blank"><li><LinkedInIcon style={{ fill: '#0072b1' }} /></li></a>
+              <a href="mailto:ryan@ryanbahan.com"><li><MailOutlineIcon style={{ fill: '#24292e' }} /></li></a>
             </ul>
             <div className="partial-bg">
               <canvas id="home-points"></canvas>

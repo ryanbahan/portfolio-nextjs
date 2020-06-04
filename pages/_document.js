@@ -1,22 +1,50 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+export default class MyDocument extends Document {
+  static getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet();
+    const page = renderPage((App) => (props) =>
+      sheet.collectStyles(<App {...props} />)
+    );
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
   }
 
   render() {
     return (
-      <Html>
-        <Head />
-        <body data-barba="wrapper">
+      <html lang="en">
+        <Head>
+          <meta charSet="UTF-8" />
+          <meta
+            name="description"
+            content="Take control over your learning content with powerful tools to organize and motivate. Transform your bookmarks into actual learning sessions."
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="canonical" href="https://learnable-fe.now.sh/" />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Learnable" />
+          <meta
+            property="og:description"
+            content="Take control over your learning content with powerful tools to organize and motivate. Transform your bookmarks into actual learning sessions."
+          />
+          <meta property="og:url" content="https://learnable-fe.now.sh/" />
+          <meta property="og:site_name" content="Learnable" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          {this.props.styleTags}
+        </Head>
+        <body>
           <Main />
           <NextScript />
         </body>
-      </Html>
-    )
+      </html>
+    );
   }
 }
-
-export default MyDocument
