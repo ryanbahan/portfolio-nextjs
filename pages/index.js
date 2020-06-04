@@ -45,7 +45,7 @@ export default function Home() {
               subtitle={"jQuery, Chart.js, Interact.js"}
               description={`A widget-based, drag-and-drop fitness tracking application meant
               to improve the health and well-being of its user community.`}
-              img={"/assets/trip-advicer-device-mock-1x.png"}
+              img={"/assets/Macbook03.png"}
               repoLink={"https://ryanbahan.github.io/trip-advicer-v1/"}
               deployLink={"https://github.com/ryanbahan/trip-advicer-v1"}
             />
@@ -78,6 +78,11 @@ export default function Home() {
           text-decoration: none;
           font-weight: 600;
           color: #fff;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
         }
 
         nav {
@@ -179,7 +184,6 @@ export default function Home() {
         }
 
         .center-wrapper {
-          pointer-events: none;
           z-index: 5;
         }
 
