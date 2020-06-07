@@ -88,7 +88,7 @@ class LandingPage extends React.Component {
                 >
                   developer
                 </motion.li></a>
-                <motion.li
+                <a href="#blog-preview"><motion.li
                   className="skills-2"
                   initial="hidden"
                   animate="show"
@@ -96,7 +96,7 @@ class LandingPage extends React.Component {
                   whileHover="hover"
                 >
                   writer
-                </motion.li>
+                </motion.li></a>
                 <a href="#about"><motion.li
                   className="skills-3"
                   initial="hidden"

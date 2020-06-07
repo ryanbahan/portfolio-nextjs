@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import BlogPreview from '../src/components/BlogPreview'
 import LandingPage from '../src/components/LandingPage'
 import FeaturedWork from '../src/components/FeaturedWork'
 import About from '../src/components/About'
@@ -50,6 +51,7 @@ export default function Home() {
               deployLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
             />
           </section>
+          <BlogPreview />
         </section>
       </main>
 
