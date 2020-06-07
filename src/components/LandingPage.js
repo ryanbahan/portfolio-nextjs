@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
       <>
         <div className="landing-wrapper">
           <section className="landing">
-            <a href="#work"><Div
+            <a href="#about"><Div
               initial="hidden"
               animate="show"
               variants={downBtnVariants}
@@ -97,7 +97,7 @@ class LandingPage extends React.Component {
                 >
                   writer
                 </motion.li>
-                <motion.li
+                <a href="#about"><motion.li
                   className="skills-3"
                   initial="hidden"
                   animate="show"
@@ -105,7 +105,7 @@ class LandingPage extends React.Component {
                   whileHover="hover"
                 >
                   creator
-                </motion.li>
+                </motion.li></a>
               </ul>
             </div>
           </section>

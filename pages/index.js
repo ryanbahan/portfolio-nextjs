@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import LandingPage from '../src/components/LandingPage'
 import FeaturedWork from '../src/components/FeaturedWork'
+import About from '../src/components/About'
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       </Head>
       <main>
         <LandingPage />
-        <section className="work">
-          <a name="work"><h2 className="title-label">Featured Work</h2></a>
+        <section className="scroll-content">
+          <About />
+          <a name="work"><h1 className="title-label">Featured Work</h1></a>
           <section className="portfolio-item-wrapper">
             <FeaturedWork
               title={"Easy Email"}
@@ -25,7 +27,7 @@ export default function Home() {
               description={`Easy Email allows users of all skills levels to create beautiful, responsive emails
               with no code required. Even better - Easy Email leverages machine learning to
               analyze the emotional sentiment of your email content.`}
-              img={"/assets/Macbook01.png"}
+              img={"/assets/ssss.png"}
               repoLink={"https://github.com/ryanbahan/easy-email-2020"}
               deployLink={"https://ryanbahan.github.io/easy-email-2020/"}
             />
@@ -34,7 +36,7 @@ export default function Home() {
               subtitle={"Next.js, Golang"}
               description={`The learning management platform for developers. Store content from all around
                 the web, track progress, and close those pesky browser tabs.`}
-              img={"/assets/Macbook02.png"}
+              img={"/assets/ttt.png"}
               repoLink={"https://github.com/learn-able"}
               deployLink={"https://learnable-fe.now.sh/"}
             />
@@ -43,16 +45,13 @@ export default function Home() {
               subtitle={"jQuery, Chart.js, Interact.js"}
               description={`A widget-based, drag-and-drop fitness tracking application meant
               to improve the health and well-being of its user community.`}
-              img={"/assets/Macbook03.png"}
-              repoLink={"https://ryanbahan.github.io/trip-advicer-v1/"}
-              deployLink={"https://github.com/ryanbahan/trip-advicer-v1"}
+              img={"/assets/llll.png"}
+              repoLink={"https://github.com/ryanbahan/fitlit-1911"}
+              deployLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
             />
           </section>
         </section>
       </main>
-
-      <footer>
-      </footer>
 
       <style jsx global>{`
         * {
@@ -152,7 +151,7 @@ export default function Home() {
           border: none;
         }
 
-        .work {
+        .scroll-content {
           box-shadow: 0px -2.5px 5px rgba(0,0,0,0.05);
           background-color: #fff;
           flex-grow: 1;
@@ -166,14 +165,9 @@ export default function Home() {
           z-index: 3;
         }
 
-        .about {
-          border: solid 1px black;
-          width: 100%;
-          height: 100vh;
-        }
-
         .title-label {
-          margin: 4.5rem 0;
+          margin: 0 0 4.5rem 0;
+          padding-top: 5rem;
         }
 
         .title-label-2 {

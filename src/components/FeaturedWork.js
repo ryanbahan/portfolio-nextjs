@@ -1,3 +1,13 @@
+const imgStyles = {
+  boxShadow: `0 0.5px 1px rgba(0,0,0,0.03),
+                0 1px 2px rgba(0,0,0,0.03),
+                0 2px 4px rgba(0,0,0,0.03),
+                0 4px 8px rgba(0,0,0,0.03),
+                0 8px 16px rgba(0,0,0,0.03),
+                0 16px 32px rgba(0,0,0,0.03)`,
+  width: "5rem"
+}
+
 const FeaturedWork = ({
   title,
   img,
@@ -7,7 +17,7 @@ const FeaturedWork = ({
   deployLink }) => {
   return (
     <article className="portfolio-card" data-portfolio-item="whats-new">
-      <img src={ img } alt="" className="device-mock" />
+      <img style={imgStyles} src={ img } alt="" className="device-mock" />
       <div className="portfolio-card-info">
         <h3>{ title }</h3>
         <h4 style={{fontWeight: "500", fontStyle: "italic"}}>{ subtitle }</h4>
