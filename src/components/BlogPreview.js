@@ -25,17 +25,17 @@ const BlogPreview = () => {
         <Wrapper>
           <BlogPostFigure
             title={"The Budgeter's Guide to Starting a Podcast"}
-            img={"/assets/william-iven-TMOeGZw9NY4-unsplash.jpg"}
+            img={"/assets/blog1.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/budgeters-guide-to-starting-a-podcast"}
           />
           <BlogPostFigure
             title={"Email Marketing in 2019: The foundations you should know"}
-            img={"/assets/kevin-bhagat-0CDP_vQhD-Y-unsplash.jpg"}
+            img={"/assets/blog2.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/3/email-marketing-basics-what-you-should-know"}
           />
           <BlogPostFigure
             title={"Content Writing 101: The Technical Basics of Making a Great Post"}
-            img={"/assets/feliphe-schiarolli-hes6nUC1MVc-unsplash.jpg"}
+            img={"/assets/blog3.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
           />
         </Wrapper>

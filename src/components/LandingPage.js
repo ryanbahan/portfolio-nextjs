@@ -8,9 +8,9 @@ import styled from 'styled-components';
 
 class LandingPage extends React.Component {
 
-  componentDidMount() {
-    generateHomePoints()
-  }
+  // componentDidMount() {
+  //   generateHomePoints()
+  // }
 
   render() {
     return (
