@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Nav from '../src/components/Nav'
 import LandingPage from '../src/components/LandingPage'
 import FeaturedWork from '../src/components/FeaturedWork'
 
@@ -15,7 +14,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
       </Head>
-      <Nav />
       <main>
         <LandingPage />
         <section className="work">
@@ -62,6 +60,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: 'Spartan', sans-serif;
+          color: #2c3e50;
         }
 
         html,
@@ -149,6 +148,10 @@ export default function Home() {
           width: 100vw;
         }
 
+        #home-points {
+          border: none;
+        }
+
         .work {
           box-shadow: 0px -2.5px 5px rgba(0,0,0,0.05);
           background-color: #fff;
@@ -192,7 +195,6 @@ export default function Home() {
           left: 0;
           bottom: 0;
           position: absolute;
-          background-color: #e3e3e3;
           min-height: 100vh;
           width: 47.3%;
         }
@@ -220,10 +222,11 @@ export default function Home() {
 
         .social-icons {
           position: absolute;
-          bottom: 0;
-          right: 0;
+          top: 1rem;
+          right: 2.5rem;
           list-style: none;
           display: flex;
+          align-items: center;
           margin: 0.25rem;
         }
 
@@ -233,18 +236,6 @@ export default function Home() {
           min-width: 2rem;
           text-align: center;
           cursor: pointer;
-        }
-
-        .fa-github {
-          color: #F1502F;
-        }
-
-        .fa-linkedin-in {
-          color: #2867B2;
-        }
-
-        .fa-envelope-square {
-          color: rgba(0,0,0,0.65)
         }
 
         .portfolio-item-wrapper {
@@ -271,14 +262,24 @@ export default function Home() {
           padding: 0.75rem 0;
         }
 
+        .portfolio-button-container {
+          margin-left: -0.55rem;
+        }
+
         .portfolio-card-info button {
           padding: 1rem;
           font-size: 0.85rem;
           border-radius: 0.25rem;
-          border: solid 0.5px #f9f9f9;
+          border: none;
           background: #e4e4e4;
           margin: 0.5rem;
           cursor: pointer;
+          box-shadow: 0 0.5px 1px rgba(0,0,0,0.03),
+                        0 1px 2px rgba(0,0,0,0.03),
+                        0 2px 4px rgba(0,0,0,0.03),
+                        0 4px 8px rgba(0,0,0,0.03),
+                        0 8px 16px rgba(0,0,0,0.03),
+                        0 16px 32px rgba(0,0,0,0.03);
         }
 
         .device-mock {

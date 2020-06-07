@@ -10,8 +10,8 @@ const FeaturedWork = ({
       <img src={ img } alt="" className="device-mock" />
       <div className="portfolio-card-info">
         <h3>{ title }</h3>
-        <h4>{ subtitle }</h4>
-        <p className="portfolio-description">
+        <h4 style={{fontWeight: "500", fontStyle: "italic"}}>{ subtitle }</h4>
+        <p className="portfolio-description" style={{lineHeight: "1.75"}}>
           { description }
         </p>
         <div className="portfolio-button-container">

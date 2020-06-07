@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <link rel="canonical" href="https://learnable-fe.now.sh/" />
           <meta name="robots" content="index, follow" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Learnable" />
+          <meta property="og:title" content="hey, i'm ryan." />
           <meta
             property="og:description"
             content="Take control over your learning content with powerful tools to organize and motivate. Transform your bookmarks into actual learning sessions."

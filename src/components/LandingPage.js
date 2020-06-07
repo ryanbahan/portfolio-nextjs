@@ -3,6 +3,8 @@ import { motion } from "framer-motion"
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import styled from 'styled-components';
 
 class LandingPage extends React.Component {
 
@@ -15,6 +17,14 @@ class LandingPage extends React.Component {
       <>
         <div className="landing-wrapper">
           <section className="landing">
+            <a href="#work"><Div
+              initial="hidden"
+              animate="show"
+              variants={downBtnVariants}
+              whileHover="hover"
+            >
+              <KeyboardArrowDownIcon />
+            </Div></a>
             <ul className="social-icons">
               <motion.a
                 href="https://github.com/ryanbahan"
@@ -23,7 +33,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3 }}
               >
-                <li><GitHubIcon style={{ fill: '#F1502F', fontSize: '2rem' }}/></li>
+                <li><GitHubIcon style={{ fill: '#333', fontSize: '1.75rem' }}/></li>
               </motion.a>
               <motion.a
                 href="https://www.linkedin.com/in/ryanbahan/"
@@ -32,7 +42,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3.15 }}
               >
-                <li><LinkedInIcon style={{ fill: '#0072b1', fontSize: '2rem' }} /></li>
+                <li><LinkedInIcon style={{ fill: '#2867B2', fontSize: '2rem' }} /></li>
               </motion.a>
               <motion.a
                 href="mailto:ryan@ryanbahan.com"
@@ -40,7 +50,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3.3 }}
               >
-                <li><MailOutlineIcon style={{ fill: '#24292e', fontSize: '2rem' }} /></li>
+                <li><MailOutlineIcon style={{ fill: '#c0392b', fontSize: '2rem' }} /></li>
               </motion.a>
             </ul>
             <motion.div
@@ -71,25 +81,28 @@ class LandingPage extends React.Component {
               <ul className="skills">
                 <a href="#work"><motion.li
                   className="skills-1 underline"
-                  initial={{opacity: 0}}
-                  animate={{opacity: 1}}
-                  transition={{ delay: 1.75 }}
+                  initial="hidden"
+                  animate="show"
+                  variants={developerVariants}
+                  whileHover="hover"
                 >
                   developer
                 </motion.li></a>
                 <motion.li
                   className="skills-2"
-                  initial={{opacity: 0}}
-                  animate={{opacity: 1}}
-                  transition={{ delay: 2 }}
+                  initial="hidden"
+                  animate="show"
+                  variants={writerVariants}
+                  whileHover="hover"
                 >
                   writer
                 </motion.li>
                 <motion.li
                   className="skills-3"
-                  initial={{opacity: 0}}
-                  animate={{opacity: 1}}
-                  transition={{ delay: 2.25 }}
+                  initial="hidden"
+                  animate="show"
+                  variants={creatorVariants}
+                  whileHover="hover"
                 >
                   creator
                 </motion.li>
@@ -102,6 +115,73 @@ class LandingPage extends React.Component {
       </>
     )
   }
+}
+
+const Div = styled(motion.div)`
+  position: absolute;
+  color: #2c3e50;
+  background: #ecf0f1;
+  box-shadow: 0 0.5px 1px rgba(0,0,0,0.03),
+                0 1px 2px rgba(0,0,0,0.03),
+                0 2px 4px rgba(0,0,0,0.03),
+                0 4px 8px rgba(0,0,0,0.03),
+                0 8px 16px rgba(0,0,0,0.03),
+                0 16px 32px rgba(0,0,0,0.03);
+  bottom: 3.5rem;
+  right: 3.5rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+`
+
+const developerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 1.75
+    }
+  },
+  hover: {scale: 1.1}
+}
+
+const downBtnVariants = {
+  hidden: { opacity: 0, scale: 0.75 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 3.5,
+    }
+  },
+  hover: {scale: 1.1}
+}
+
+const writerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 2
+    }
+  },
+  hover: {scale: 1.1}
+}
+
+const creatorVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 2.25
+    }
+  },
+  hover: {scale: 1.1}
 }
 
 export default LandingPage
