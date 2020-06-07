@@ -23,7 +23,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3 }}
               >
-                <li><GitHubIcon style={{ fill: '#F1502F' }}/></li>
+                <li><GitHubIcon style={{ fill: '#F1502F', fontSize: '2rem' }}/></li>
               </motion.a>
               <motion.a
                 href="https://www.linkedin.com/in/ryanbahan/"
@@ -32,7 +32,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3.15 }}
               >
-                <li><LinkedInIcon style={{ fill: '#0072b1' }} /></li>
+                <li><LinkedInIcon style={{ fill: '#0072b1', fontSize: '2rem' }} /></li>
               </motion.a>
               <motion.a
                 href="mailto:ryan@ryanbahan.com"
@@ -40,7 +40,7 @@ class LandingPage extends React.Component {
                 animate={{opacity: 1}}
                 transition={{ delay: 3.3 }}
               >
-                <li><MailOutlineIcon style={{ fill: '#24292e' }} /></li>
+                <li><MailOutlineIcon style={{ fill: '#24292e', fontSize: '2rem' }} /></li>
               </motion.a>
             </ul>
             <motion.div
