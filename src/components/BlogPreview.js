@@ -5,6 +5,7 @@ const Section = styled.section`
   width: 100%;
   margin-bottom: 2.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -23,6 +24,7 @@ const H1 = styled.h1`
   text-align: center;
   padding-top: 5rem;
   font-weight: 600;
+  width: 100%;
 `
 
 const BlogPreview = () => {
