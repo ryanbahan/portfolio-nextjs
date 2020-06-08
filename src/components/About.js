@@ -7,16 +7,20 @@ import WifiIcon from '@material-ui/icons/Wifi'
 import WavesIcon from '@material-ui/icons/Waves'
 
 const Section = styled.section`
+  display: flex;
+  flex-direction: column;
   min-width: 30rem;
-  width: 50%;
+  width: 60%;
   max-width: 45rem;
   padding: 0 2.5rem;
+  margin: 0 auto;
 `
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-left: -1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-gap: 5rem;
+  margin-left: -1.5rem;
 `
 
 const About = () => {
