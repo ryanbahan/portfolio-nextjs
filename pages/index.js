@@ -19,7 +19,6 @@ export default function Home() {
       <main>
         <LandingPage />
         <section className="scroll-content" style={{backgroundColor: "#fff"}}>
-          <About />
           <a name="work"><h1 className="title-label">Featured Work</h1></a>
           <section className="portfolio-item-wrapper">
             <FeaturedWork
@@ -52,6 +51,7 @@ export default function Home() {
             />
           </section>
           <BlogPreview />
+          <About />
         </section>
       </main>
 

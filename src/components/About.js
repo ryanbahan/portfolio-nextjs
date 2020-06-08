@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   grid-gap: 5rem;
   margin-left: -1.5rem;
+  margin-bottom: 7.5rem;
 `
 
 const About = () => {

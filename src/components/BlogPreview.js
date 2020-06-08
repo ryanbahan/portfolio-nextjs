@@ -3,7 +3,7 @@ import BlogPostFigure from './BlogPostFigure'
 
 const Section = styled.section`
   width: 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

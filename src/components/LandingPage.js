@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
       <>
         <div className="landing-wrapper">
           <section className="landing">
-            <a href="#about"><Div
+            <a href="#work"><Div
               initial="hidden"
               animate="show"
               variants={downBtnVariants}
