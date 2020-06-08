@@ -1,5 +1,34 @@
 import styled from 'styled-components'
 
+const FeaturedWork = ({
+  title,
+  img,
+  subtitle,
+  description,
+  repoLink,
+  deployLink }) => {
+  return (
+    <Card>
+      <Img src={ img } alt=""/>
+      <CardInfo>
+        <h3>{ title }</h3>
+        <h4 style={{fontWeight: "500", fontStyle: "italic"}}>{ subtitle }</h4>
+        <PortfolioDescription>
+          { description }
+        </PortfolioDescription>
+        <ButtonContainer>
+          <a href={ deployLink } target="_blank">
+            <Button type="button" name="button">View App</Button>
+          </a>
+          <a href={ repoLink } target="_blank">
+            <Button type="button" name="button">View Code</Button>
+          </a>
+        </ButtonContainer>
+      </CardInfo>
+    </Card>
+  )
+}
+
 const Img = styled.img`
   min-width: 20rem;
   width: 30rem;
@@ -58,30 +87,5 @@ const Card = styled.article`
   margin: 0 0 2.5rem 0;
   max-width: 100vw;
 `
-
-const FeaturedWork = ({
-  title,
-  img,
-  subtitle,
-  description,
-  repoLink,
-  deployLink }) => {
-  return (
-    <Card>
-      <Img src={ img } alt=""/>
-      <CardInfo>
-        <h3>{ title }</h3>
-        <h4 style={{fontWeight: "500", fontStyle: "italic"}}>{ subtitle }</h4>
-        <PortfolioDescription>
-          { description }
-        </PortfolioDescription>
-        <ButtonContainer>
-          <a href={ deployLink } target="_blank"><Button type="button" name="button">View App</Button></a>
-          <a href={ repoLink } target="_blank"><Button type="button" name="button">View Code</Button></a>
-        </ButtonContainer>
-      </CardInfo>
-    </Card>
-  )
-}
 
 export default FeaturedWork

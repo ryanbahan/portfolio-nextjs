@@ -1,6 +1,31 @@
 import styled from 'styled-components'
 import BlogPostFigure from './BlogPostFigure'
 
+const BlogPreview = () => {
+  return (
+    <Section>
+      <a name="blog-preview"><H1>Blog</H1></a>
+        <Wrapper>
+          <BlogPostFigure
+            title={"The Budgeter's Guide to Starting a Podcast"}
+            img={"/assets/blog1.jpg"}
+            link={"https://ryan-bahan-whtx.squarespace.com/blog/budgeters-guide-to-starting-a-podcast"}
+          />
+          <BlogPostFigure
+            title={"Email Marketing in 2019: The foundations you should know"}
+            img={"/assets/blog2.jpg"}
+            link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/3/email-marketing-basics-what-you-should-know"}
+          />
+          <BlogPostFigure
+            title={"Content Writing 101: The Technical Basics of Making a Great Post"}
+            img={"/assets/blog3.jpg"}
+            link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
+          />
+        </Wrapper>
+    </Section>
+  )
+}
+
 const Section = styled.section`
   width: 100%;
   margin-bottom: 2.5rem;
@@ -26,30 +51,5 @@ const H1 = styled.h1`
   font-weight: 600;
   width: 100%;
 `
-
-const BlogPreview = () => {
-  return (
-    <Section>
-      <a name="blog-preview"><H1>Blog</H1></a>
-        <Wrapper>
-          <BlogPostFigure
-            title={"The Budgeter's Guide to Starting a Podcast"}
-            img={"/assets/blog1.jpg"}
-            link={"https://ryan-bahan-whtx.squarespace.com/blog/budgeters-guide-to-starting-a-podcast"}
-          />
-          <BlogPostFigure
-            title={"Email Marketing in 2019: The foundations you should know"}
-            img={"/assets/blog2.jpg"}
-            link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/3/email-marketing-basics-what-you-should-know"}
-          />
-          <BlogPostFigure
-            title={"Content Writing 101: The Technical Basics of Making a Great Post"}
-            img={"/assets/blog3.jpg"}
-            link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
-          />
-        </Wrapper>
-    </Section>
-  )
-}
 
 export default BlogPreview

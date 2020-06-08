@@ -6,24 +6,6 @@ import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn'
 import WifiIcon from '@material-ui/icons/Wifi'
 import WavesIcon from '@material-ui/icons/Waves'
 
-const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  min-width: 22.5rem;
-  width: 60%;
-  max-width: 45rem;
-  padding: 0 2.5rem;
-  margin: 0 auto;
-`
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  grid-gap: 5rem;
-  margin-left: -1.5rem;
-  margin-bottom: 7.5rem;
-`
-
 const About = () => {
   return (
     <Section>
@@ -42,5 +24,23 @@ const About = () => {
     </Section>
   )
 }
+
+const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  min-width: 22.5rem;
+  width: 60%;
+  max-width: 45rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+`
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-gap: 5rem;
+  margin-left: -1.5rem;
+  margin-bottom: 7.5rem;
+`
 
 export default About
