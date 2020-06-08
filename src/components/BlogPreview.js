@@ -8,6 +8,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  z-index: 10;
 `
 
 const Wrapper = styled.div`
@@ -17,13 +18,17 @@ const Wrapper = styled.div`
   margin-top: 2.5rem;
 `
 
+const H1 = styled.h1`
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 5rem;
+  font-weight: 600;
+`
+
 const BlogPreview = () => {
   return (
     <Section>
-      <a name="blog-preview">
-        <h1 style={{fontSize: "2rem", textAlign: "center", paddingTop: "5rem", fontWeight: "600"}}>
-          Blog
-        </h1>
+      <a name="blog-preview"><H1>Blog</H1></a>
         <Wrapper>
           <BlogPostFigure
             title={"The Budgeter's Guide to Starting a Podcast"}
@@ -41,7 +46,6 @@ const BlogPreview = () => {
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
           />
         </Wrapper>
-      </a>
     </Section>
   )
 }
