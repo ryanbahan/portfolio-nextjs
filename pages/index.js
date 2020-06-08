@@ -133,6 +133,7 @@ export default function Home() {
         .landing-wrapper {
           position: fixed;
           top: 0;
+          height: 100%;
         }
 
         .landing {
@@ -141,7 +142,7 @@ export default function Home() {
           align-items: center;
           position: relative;
           width: 100vw;
-          height: 100vh;
+          height: 100%;
         }
 
         .landing-placeholder {
