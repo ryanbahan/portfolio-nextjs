@@ -27,8 +27,8 @@ const Wrapper = styled.div`
 const About = () => {
   return (
     <Section>
-      <a name="about"><h1 style={{fontSize: "2rem", textAlign: "center", paddingTop: "5rem", fontWeight: "600"}}>About</h1></a>
-      <h2 style={{margin: "1.5rem 0", fontWeight: "500"}}>I'm a software engineer currently based in Denver, CO.</h2>
+      <a name="about"><h1 style={{fontSize: "2rem", textAlign: "center", padding: "5rem 0", fontWeight: "600"}}>About</h1></a>
+      <h2 style={{marginBottom: "1.5rem", fontWeight: "500"}}>I'm a software engineer currently based in Denver, CO.</h2>
       <h3 style={{margin: "0.75rem 0", fontWeight: "500", lineHeight: "1.5", marginBottom: "7.5rem", }}>
         I love creating performant, responsive, and modern web applications in React + Node.<br /><br />
         When I'm not coding, you'll find me producing music, writing about code, and creating generative art.

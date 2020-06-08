@@ -15,8 +15,8 @@ class LandingPage extends React.Component {
   render() {
     return (
       <>
-        <div className="landing-wrapper">
-          <section className="landing">
+        <LandingWrapper>
+          <Landing>
             <a href="#work">
             <Div
               initial="hidden"
@@ -26,7 +26,7 @@ class LandingPage extends React.Component {
             >
               <KeyboardArrowDownIcon />
             </Div></a>
-            <ul className="social-icons">
+            <SocialIcons>
               <motion.a
                 href="https://github.com/ryanbahan"
                 target="_blank"
@@ -53,33 +53,30 @@ class LandingPage extends React.Component {
               >
                 <li><MailOutlineIcon style={{ fill: '#c0392b', fontSize: '2rem' }} /></li>
               </motion.a>
-            </ul>
-            <motion.div
-              className="partial-bg"
+            </SocialIcons>
+            <PartialBG
               initial={{x: -1000}}
               animate={{ x: 0 }}
               transition={{ type: "spring", damping: 100, delay: 0.25 }}
             >
               <canvas id="home-points"></canvas>
-            </motion.div>
-            <div className="center-wrapper">
-              <motion.p
-                className="firstname"
+            </PartialBG>
+            <CenterWrapper>
+              <Name
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 1}}
                 transition={{ delay: 1, damping: 100 }}
               >
                 ryan&nbsp;
-                <motion.span
+                <Name
                   initial={{opacity: 0, y: -20}}
                   animate={{opacity: 1, y: 1}}
                   transition={{ delay: 1.3, damping: 100 }}
-                  className="lastname"
                 >
                   bahan
-                </motion.span>
-              </motion.p>
-              <ul className="skills">
+                </Name>
+              </Name>
+              <Skills>
                 <a href="#work"><motion.li
                   className="skills-1 underline"
                   initial="hidden"
@@ -107,16 +104,81 @@ class LandingPage extends React.Component {
                 >
                   creator
                 </motion.li></a>
-              </ul>
-            </div>
-          </section>
-        </div>
-        <div className="landing-placeholder">
-        </div>
+              </Skills>
+            </CenterWrapper>
+          </Landing>
+        </LandingWrapper>
+        <LandingPlaceholder />
       </>
     )
   }
 }
+
+const LandingWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  height: 100%;
+`
+
+const LandingPlaceholder = styled.div`
+  height: 100vh;
+  width: 100vw;
+`
+
+const Landing = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+`
+
+const SocialIcons = styled.ul`
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0.25rem;
+
+  li {
+    font-size: 1.5rem;
+    padding: 1rem;
+    min-width: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+`
+
+const Skills = styled.ul`
+  font-size: 2.9vw;
+  font-weight: 300;
+  margin: 2.5% 0;
+  padding: 0 1.5%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+`
+
+const PartialBG = styled(motion.div)`
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  min-height: 100vh;
+  width: 47.3%;
+`
+
+const CenterWrapper = styled.div`
+  z-index: 5;
+`
+
+const Name = styled(motion.span)`
+  font-size: 10vw;
+  font-weight: 100;
+`
 
 const Div = styled(motion.div)`
   position: absolute;
