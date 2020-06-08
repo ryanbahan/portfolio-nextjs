@@ -7,13 +7,16 @@ import WifiIcon from '@material-ui/icons/Wifi'
 import WavesIcon from '@material-ui/icons/Waves'
 
 const Section = styled.section`
-  width: 45rem;
+  min-width: 30rem;
+  width: 50%;
+  max-width: 45rem;
+  padding: 0 2.5rem;
 `
 
 const Wrapper = styled.div`
-  margin: 5rem 0;
   display: flex;
   justify-content: space-between;
+  margin-left: -1rem;
 `
 
 const About = () => {

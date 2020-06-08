@@ -11,15 +11,17 @@ const Section = styled.section`
 `
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 70vw;
+  margin-top: 2.5rem;
 `
 
 const BlogPreview = () => {
   return (
     <Section>
       <a name="blog-preview">
-        <h1 style={{fontSize: "2rem", textAlign: "center", paddingTop: "5rem", paddingBottom: "1rem", fontWeight: "600"}}>
+        <h1 style={{fontSize: "2rem", textAlign: "center", paddingTop: "5rem", fontWeight: "600"}}>
           Blog
         </h1>
         <Wrapper>
