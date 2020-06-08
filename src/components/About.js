@@ -9,7 +9,7 @@ import WavesIcon from '@material-ui/icons/Waves'
 const Section = styled.section`
   display: flex;
   flex-direction: column;
-  min-width: 30rem;
+  min-width: 22.5rem;
   width: 60%;
   max-width: 45rem;
   padding: 0 2.5rem;
