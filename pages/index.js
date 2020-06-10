@@ -10,12 +10,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <meta charset="utf-8" />
         <title>hey, i'm ryan.</title>
-        <script src="/pts.min.js"></script>
-        <script>history.scrollRestoration = "manual"</script>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
       </Head>
       <Main>
         <LandingPage />
