@@ -35,12 +35,4 @@ const About = () => {
   )
 }
 
-const Wrapper = styled.div`
-  max-width: 40rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  grid-gap: 5rem;
-  border: solid 1px black;
-`
-
 export default About
