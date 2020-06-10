@@ -22,7 +22,7 @@ const Section = styled.section`
 const Img = styled.img`
   width: 100%;
   height: 10rem;
-  objectFit: cover;}
+  object-fit: cover;}
 `
 
 const H3 = styled.h3`

@@ -63,6 +63,7 @@ export default function Home() {
           margin: 0;
           font-family: 'Spartan', sans-serif;
           color: #2c3e50;
+          overscroll-behavior-y: none;
         }
 
         html,

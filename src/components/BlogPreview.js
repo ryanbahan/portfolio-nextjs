@@ -8,17 +8,17 @@ const BlogPreview = () => {
         <Wrapper>
           <BlogPostFigure
             title={"The Budgeter's Guide to Starting a Podcast"}
-            img={"/assets/blog1.jpg"}
+            img={"/assets/podcast_blog.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/budgeters-guide-to-starting-a-podcast"}
           />
           <BlogPostFigure
             title={"Email Marketing in 2019: The foundations you should know"}
-            img={"/assets/blog2.jpg"}
+            img={"/assets/email_blog.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/3/email-marketing-basics-what-you-should-know"}
           />
           <BlogPostFigure
             title={"Content Writing 101: The Technical Basics of Making a Great Post"}
-            img={"/assets/blog3.jpg"}
+            img={"/assets/content_writing_blog.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
           />
         </Wrapper>
@@ -33,8 +33,6 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  z-index: 10;
 `
 
 const Wrapper = styled.div`

@@ -114,9 +114,12 @@ class LandingPage extends React.Component {
   }
 }
 
-const LandingWrapper = styled.div`
-  position: fixed;
-  top: 0;
+const Landing = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
   height: 100%;
 `
 
@@ -125,12 +128,9 @@ const LandingPlaceholder = styled.div`
   width: 100vw;
 `
 
-const Landing = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100vw;
+const LandingWrapper = styled.div`
+  position: fixed;
+  top: 0;
   height: 100%;
 `
 
