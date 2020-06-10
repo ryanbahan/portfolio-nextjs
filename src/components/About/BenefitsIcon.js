@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import BenefitsIcon from './BenefitsIcon'
+import { GridItem } from '../../styles/components'
 import DevicesOtherIcon from '@material-ui/icons/DevicesOther'
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn'
 import WifiIcon from '@material-ui/icons/Wifi'
@@ -20,11 +20,11 @@ const getIcon = (title) => {
 
 const About = ({ title, description }) => {
   return (
-    <Section>
+    <GridItem>
       { getIcon(title) }
       <p style={{fontWeight: "600"}}>{ title }</p>
       <p style={{textAlign: "center", margin: "1rem 0"}}>{ description }</p>
-    </Section>
+    </GridItem>
   )
 }
 

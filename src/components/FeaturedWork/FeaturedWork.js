@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import FeaturedWorkItem from './FeaturedWorkItem'
+import { SectionTitle, FullWidthColumn } from '../../styles/components'
 
 const FeaturedWork = () => {
     return (
-        <FeaturedWorkWrapper>
-            <a name="work"><H1>Featured Work</H1></a>
+        <FullWidthColumn>
+            <a name="work"><SectionTitle>Featured Work</SectionTitle></a>
             <FeaturedWorkItem
                 title={"Easy Email"}
                 subtitle={"React/Node, IBM Watson"}
@@ -33,22 +34,8 @@ const FeaturedWork = () => {
                 repoLink={"https://github.com/ryanbahan/fitlit-1911"}
                 deployLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
             />
-        </FeaturedWorkWrapper> 
+        </FullWidthColumn> 
     )
 }
-
-const FeaturedWorkWrapper = styled.section`
-  max-width: 100vw;
-  overflow: scroll;
-  margin: 0 2.5rem;
-`
-
-const H1 = styled.h1`
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 5rem;
-  margin-bottom: 5rem;
-  font-weight: 600;
-`
 
 export default FeaturedWork

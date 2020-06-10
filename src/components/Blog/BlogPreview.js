@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 import BlogPostFigure from './BlogPostFigure'
+import { 
+  SectionTitle, 
+  FullWidthColumn, 
+  ItemGridWide 
+} from '../../styles/components'
 
 const BlogPreview = () => {
   return (
-    <Section>
-      <a name="blog-preview"><H1>Blog</H1></a>
-        <Wrapper>
+    <FullWidthColumn>
+      <a name="blog-preview"><SectionTitle>Blog</SectionTitle></a>
+        <ItemGridWide>
           <BlogPostFigure
             title={"The Budgeter's Guide to Starting a Podcast"}
             img={"/assets/podcast_blog.jpg"}
@@ -21,33 +26,9 @@ const BlogPreview = () => {
             img={"/assets/content_writing_blog.jpg"}
             link={"https://ryan-bahan-whtx.squarespace.com/blog/2019/4/4/content-writing-101-the-basics-of-making-a-great-post"}
           />
-        </Wrapper>
-    </Section>
+        </ItemGridWide>
+    </FullWidthColumn>
   )
 }
-
-const Section = styled.section`
-  width: 100%;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  width: 70vw;
-  margin-top: 2.5rem;
-`
-
-const H1 = styled.h1`
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 5rem;
-  font-weight: 600;
-  width: 100%;
-`
 
 export default BlogPreview

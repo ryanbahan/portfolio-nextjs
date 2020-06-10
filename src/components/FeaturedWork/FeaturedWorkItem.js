@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { SectionSubtitle } from '../../styles/components'
 
 const FeaturedWorkItem = ({
   title,
@@ -11,7 +12,7 @@ const FeaturedWorkItem = ({
     <Card>
       <Img src={ img } alt=""/>
       <CardInfo>
-        <h3>{ title }</h3>
+        <SectionSubtitle>{ title }</SectionSubtitle>
         <h4 style={{fontWeight: "500", fontStyle: "italic"}}>{ subtitle }</h4>
         <PortfolioDescription>
           { description }
