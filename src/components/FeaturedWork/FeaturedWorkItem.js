@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const FeaturedWork = ({
+const FeaturedWorkItem = ({
   title,
   img,
   subtitle,
@@ -88,4 +88,4 @@ const Card = styled.article`
   max-width: 100vw;
 `
 
-export default FeaturedWork
+export default FeaturedWorkItem

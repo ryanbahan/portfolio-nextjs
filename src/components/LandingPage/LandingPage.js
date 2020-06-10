@@ -1,4 +1,4 @@
-import { generateHomePoints } from '../generatePoints';
+import { generateHomePoints } from '../../generatePoints';
 import { motion } from "framer-motion"
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -78,7 +78,6 @@ class LandingPage extends React.Component {
               </Name>
               <Skills>
                 <a href="#work"><motion.li
-                  className="skills-1 underline"
                   initial="hidden"
                   animate="show"
                   variants={developerVariants}
@@ -87,7 +86,6 @@ class LandingPage extends React.Component {
                   developer
                 </motion.li></a>
                 <a href="#blog-preview"><motion.li
-                  className="skills-2"
                   initial="hidden"
                   animate="show"
                   variants={writerVariants}
@@ -96,7 +94,6 @@ class LandingPage extends React.Component {
                   writer
                 </motion.li></a>
                 <a href="#about"><motion.li
-                  className="skills-3"
                   initial="hidden"
                   animate="show"
                   variants={creatorVariants}
