@@ -12,7 +12,7 @@ const FeaturedWork = () => {
                 description={`Easy Email allows users of all skills levels to create beautiful, responsive emails
               with no code required. Even better - Easy Email leverages machine learning to
               analyze the emotional sentiment of your email content.`}
-                img={"/assets/ssss.png"}
+                img={"/assets/easy_email_screen.png"}
                 repoLink={"https://github.com/ryanbahan/easy-email-2020"}
                 deployLink={"https://ryanbahan.github.io/easy-email-2020/"}
             />
@@ -21,7 +21,7 @@ const FeaturedWork = () => {
                 subtitle={"Next.js, Golang"}
                 description={`The learning management platform for developers. Store content from all around
                 the web, track progress, and close those pesky browser tabs.`}
-                img={"/assets/ttt.png"}
+                img={"/assets/learnable_screen.png"}
                 repoLink={"https://github.com/learn-able"}
                 deployLink={"https://learnable-fe.now.sh/"}
             />
@@ -30,7 +30,7 @@ const FeaturedWork = () => {
                 subtitle={"jQuery, Chart.js, Interact.js"}
                 description={`A widget-based, drag-and-drop fitness tracking application meant
               to improve the health and well-being of its user community.`}
-                img={"/assets/llll.png"}
+                img={"/assets/fitlit_screen.png"}
                 repoLink={"https://github.com/ryanbahan/fitlit-1911"}
                 deployLink={"https://ryanbahan.github.io/fitlit-1911/src/index.html"}
             />
