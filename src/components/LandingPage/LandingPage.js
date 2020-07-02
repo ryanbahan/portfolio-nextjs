@@ -166,7 +166,7 @@ const Skills = styled.ul`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 700px) {
+  @media (max-width: 550px) {
     > * {
       font-weight: 400;
       font-size: 1.25rem;
@@ -191,7 +191,7 @@ const Name = styled(motion.span)`
   font-size: 10vw;
   font-weight: 100;
 
-  @media (max-width: 700px) {
+  @media (max-width: 550px) {
     font-size: 3rem;
     font-weight: 200;
   }
