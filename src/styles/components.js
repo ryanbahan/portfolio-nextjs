@@ -19,6 +19,10 @@ export const SectionSubtitleLight = styled.h2`
     line-height: 1.5;
     margin-bottom: 1rem;
     max-width: 37.5rem;
+
+    @media (max-width: 600px) {
+      padding: 0 2.5rem;
+    }
 `
 
 export const FullWidthColumn = styled.section`
@@ -49,6 +53,10 @@ export const ItemGridWide = styled.section`
   align-self: center;
   width: 100%;
   max-width: 60rem;
+
+  @media (max-width: 600px) {
+    padding: 0 2.5rem;
+  }
 `
 
 export const GridItem = styled.article`

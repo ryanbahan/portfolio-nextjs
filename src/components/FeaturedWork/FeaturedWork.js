@@ -23,7 +23,7 @@ const FeaturedWork = () => {
                 the web, track progress, and close those pesky browser tabs.`}
                 img={"/assets/learnable_screen.png"}
                 repoLink={"https://github.com/learn-able"}
-                deployLink={"https://learnable-fe.now.sh/"}
+                deployLink={"https://learnableapp.dev/"}
             />
             <FeaturedWorkItem
                 title={"FitLit"}

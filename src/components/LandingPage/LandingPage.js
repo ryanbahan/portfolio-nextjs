@@ -139,6 +139,7 @@ const SocialIcons = styled.ul`
   display: flex;
   align-items: center;
   margin: 0.25rem;
+  z-index: 5;
 
   li {
     font-size: 1.5rem;
@@ -146,6 +147,13 @@ const SocialIcons = styled.ul`
     min-width: 2rem;
     text-align: center;
     cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 `
 
@@ -157,6 +165,13 @@ const Skills = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    > * {
+      font-weight: 400;
+      font-size: 1.25rem;
+    }
+  }
 `
 
 const PartialBG = styled(motion.div)`
@@ -175,6 +190,11 @@ const CenterWrapper = styled.div`
 const Name = styled(motion.span)`
   font-size: 10vw;
   font-weight: 100;
+
+  @media (max-width: 700px) {
+    font-size: 3rem;
+    font-weight: 200;
+  }
 `
 
 const Div = styled(motion.div)`

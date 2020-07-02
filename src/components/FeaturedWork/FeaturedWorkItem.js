@@ -47,8 +47,8 @@ const Img = styled.img`
                 0 16px 32px rgba(0,0,0,0.03);
 
   @media (max-width: 600px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 `
 
