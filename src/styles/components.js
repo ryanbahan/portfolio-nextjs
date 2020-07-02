@@ -27,6 +27,10 @@ export const FullWidthColumn = styled.section`
     display: flex;
     flex-direction: column;
     padding: 2.5rem 5rem;
+
+    @media (max-width: 600px) {
+      padding: 1rem 0;
+    }
 `
 
 export const ItemGrid = styled.section`
