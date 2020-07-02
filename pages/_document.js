@@ -44,6 +44,15 @@ export default class Document extends NextDocument {
           <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
           <meta name='description' content='Description' />
           <meta name='keywords' content='Keywords' />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="hey, i'm ryan." />
+          <meta
+            property="og:description"
+            content="i'm a full-stack javascript developer based in denver, co. lover of b2b tools and creative coding."
+          />
+          <meta property="og:url" content="https://ryanbahan.dev/" />
+          <meta property="og:site_name" content="hey, i'm ryan." />
 
           <link rel="manifest" href="/manifest.json" />
           <link href='/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
