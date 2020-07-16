@@ -18,11 +18,11 @@ const FeaturedWork = () => {
             />
             <FeaturedWorkItem
                 title={"Learnable"}
-                subtitle={"Next.js, Golang"}
+                subtitle={"Next.js, Node, PostgreSQL, AWS"}
                 description={`The learning management platform for developers. Store content from all around
                 the web, track progress, and close those pesky browser tabs.`}
                 img={"/assets/learnable_screen.png"}
-                repoLink={"https://github.com/learn-able"}
+                repoLink={"https://github.com/ryanbahan/learnable"}
                 deployLink={"https://learnableapp.dev/"}
             />
             <FeaturedWorkItem
