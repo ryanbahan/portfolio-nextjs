@@ -13,8 +13,8 @@ const FeaturedWork = () => {
               with no code required. Even better - Easy Email leverages machine learning to
               analyze the emotional sentiment of your email content.`}
                 img={"/assets/easy_email_screen.png"}
-                repoLink={"https://github.com/ryanbahan/easy-email-2020"}
-                deployLink={"https://ryanbahan.github.io/easy-email-2020/"}
+                repoLink={"https://github.com/ryanbahan/easy-email"}
+                deployLink={"https://easyemail.app"}
             />
             <FeaturedWorkItem
                 title={"Learnable"}
